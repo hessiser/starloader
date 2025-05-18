@@ -1,0 +1,17 @@
+[package]
+name = "starloader"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ctor = { workspace = true }
+walkdir = { workspace = true }
+log = { workspace = true }
+
+[dependencies.windows]
+workspace = true
+features = [
+    "Win32_System_LibraryLoader",
+]

@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+    "dummyloader",
+    "starloader"
+]
+
+[workspace.dependencies]
+windows = "0.61.1"
+ctor = "0.4.1"
+walkdir = "2.5.0"
+log = "0.4.27"
